@@ -13,20 +13,13 @@ public class DiceTest {
     Dice  dice = new Dice ( 2);
     dice.setSeed();
 
-    //
-    Integer toss=dice.toss();
-    System.out.println(toss);
+    int expected = 2;
+    int actual = dice.toss();
+    assertEquals(actual,expected);
 
-    toss=dice.toss();
-    System.out.println(toss);
 
-    System.out.println(toss);
-    toss=dice.toss();
 
-    System.out.println(toss);
-    toss=dice.toss();
-}
-public void testRoll(){
+
 
 }
 }
